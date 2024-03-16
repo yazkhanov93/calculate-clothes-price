@@ -4,5 +4,5 @@ from .models import *
 
 @admin.register(Profile)
 class ProfileAdmin(admin.ModelAdmin):
-    list_display = ["name", "contacts"]
-    search_fields = ["name", "contacts"]
+    list_display = ["user","name", "contacts"]
+    search_fields = ["user", "name", "contacts"]

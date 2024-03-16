@@ -3,7 +3,7 @@ from django.db import models
 
 class ClothingItem(models.Model):
     name = models.CharField(max_length=100, verbose_name="Name")
-    image = models.ImageField(upload_to="clothingItem_img/", verbose_name="iamge", blank=True, null=True)
+    image = models.ImageField(upload_to="clothingItem_img/", verbose_name="Image", blank=True, null=True)
     description = models.TextField(verbose_name="Description", blank=True, null=True)
     
     class Meta:
